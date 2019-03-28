@@ -1,0 +1,18 @@
+#N canvas 0 23 1440 855 10;
+#X obj 59 189 phasor~;
+#X obj 56 160 mtof;
+#X obj 59 269 *~;
+#X obj 138 187 / 127;
+#X obj 59 298 *~ 1;
+#X obj 56 109 inlet;
+#X obj 138 108 inlet;
+#X text 46 21 This sub patch contains the different oscillator types
+for different waves;
+#X obj 59 334 outlet~;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 1;
+#X connect 4 0 8 0;
+#X connect 5 0 1 0;
+#X connect 6 0 3 0;
